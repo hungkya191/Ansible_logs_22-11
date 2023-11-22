@@ -1,0 +1,23 @@
+SSH password: 
+
+PLAY [Cau hinh tren router] ****************************************************
+
+TASK [Show ip] *****************************************************************
+ok: [SW]
+
+TASK [debug] *******************************************************************
+ok: [SW] => {
+    "output.stdout_lines": [
+        [
+            "Interface              IP-Address      OK? Method Status                Protocol",
+            "Ethernet0/0            10.215.27.180   YES DHCP   up                    up      ",
+            "Ethernet0/1            unassigned      YES unset  up                    up      ",
+            "Ethernet0/2            unassigned      YES unset  up                    up      ",
+            "Ethernet0/3            unassigned      YES unset  up                    up"
+        ]
+    ]
+}
+
+PLAY RECAP *********************************************************************
+SW                         : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
